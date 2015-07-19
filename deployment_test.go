@@ -37,16 +37,9 @@ func TestIsDeployable(t *testing.T) {
 
 func TestIsEverythingCommitted(t *testing.T) {
 	oldWD, _ := os.Getwd()
-	setWD(badTestData)
 
-	if isEverythingCommitted() {
-		t.Fail()
-	}
-
-	setWD(oldWD)
 	setWD(goodTestData)
 	if !isEverythingCommitted() {
-		t.Fatal("aa")
 		t.Fail()
 	}
 	setWD(oldWD)
