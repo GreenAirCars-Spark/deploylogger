@@ -55,7 +55,7 @@ func TestGetCommitHash(t *testing.T) {
 		t.Fail()
 	}
 
-	if hash != "07a8a47" {
+	if hash == "" {
 		t.Fatal("could not get commit hash")
 	}
 	setWD(oldWD)
