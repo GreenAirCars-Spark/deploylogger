@@ -1,4 +1,6 @@
-# DeployLogger
+(Forked from https://github.com/panamafrancis/deploylogger)
+
+#DeployLogger
 
 A command line tool that wraps 'goapp deploy' it'll neatly log what was
 deployed to app engine in a json file.
